@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hassan Nizar Haidar">
+    <title>More Info - AnatomyExplorer</title>
+    <link href="../Project/CSS/more_info.css" rel="stylesheet">
+    <link href="../Project/CSS/navbar.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+            <button class="nav-btn" onclick="window.location.href='contact.html'">Contact Us</button>
+            <div class="circle-button">
+                <img src="../Project/Images/Anatomy Explorer.png" alt="AE">
+            </div>
+            <button class="nav-btn" onclick="window.location.href='more_info.html'">More Info</button>
+            <button class="nav-btn" onclick="window.location.href='Signup.php'">Quiz</button>
+        </div>
+    </nav>
+    <main>
+        <section class="info-section">
+            <h1>About Anatomy Explorer</h1>
+            <p>Welcome to Anatomy Explorer, your interactive resource for learning about the human body! Our website provides detailed information and interactive content about various body systems, including:</p>
+            <ul>
+                <li><strong>Skeletal System</strong>: Learn about the bones and structure of the human skeleton.</li>
+                <li><strong>Muscular System</strong>: Explore the muscles and how they function.</li>
+                <li><strong>Cardiovascular System</strong>: Understand the heart and blood vessels that circulate blood throughout the body.</li>
+                <li><strong>Nervous System</strong>: Discover the brain, spinal cord, and nerves that control bodily functions and movement.</li>
+            </ul>
+            <p>Our interactive features include:</p>
+            <ul>
+                <li><strong>Clickable Hotspots</strong>: Click on different parts of anatomical images to learn more about each structure.</li>
+                <li><strong>Quizzes</strong>: Test your knowledge with quizzes on the various body systems.</li>
+                <li><strong>Educational Videos</strong>: Watch informative videos that explain the anatomy and functions of different systems.</li>
+            </ul>
+            <p>Thank you for visiting Anatomy Explorer. We hope you find our resources helpful and engaging!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Anatomy Explorer. All rights reserved.</p>
+    </footer>
+    <script src="../Project/JS/MoreInfo.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const quizButton = navButtons[navButtons.length - 1]; 
+
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'Signup.php'; 
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const quizButton = navButtons[navButtons.length - 3]; 
+
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'contact.html'; 
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const quizButton = navButtons[navButtons.length - 2];
+
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'more_info.html';
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.nav-btn');
+    const quizButton = navButtons[navButtons.length - 4];
+
+    quizButton.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
+});
+</script>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Quiz</title>
+    <link rel="stylesheet" href="../Project/CSS/navbar.css">
+    <link rel="stylesheet" href="../Project/CSS//Quiz.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Contact Us</button>
+            <a href="../Project/index.html" class="circle-button-link">
+                <div class="circle-button">
+                    <img src="../Project/Images/Anatomy Explorer.png" alt="AE" >
+                </div>
+            </a>
+            <button class="nav-btn">More Info</button>
+            <button class="nav-btn">Quiz</button>
+        </div>
+    </nav>
+
+    <main class="quiz-container">
+        <h1>Anatomy Quiz</h1>
+        <form id="quiz-form">
+            <div class="question1">
+                <label for="skeletal">Which of the following muscle types is described as striated and under involuntary control ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="a1" >Skeletal</label>
+                    <input class="aa1" id="a1" name="a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a2" >Cardiac</label>
+                    <input class="aa1" id="a2" name="a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a3" >Smooth</label>
+                    <input class="aa1" id="a3" name="a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a4" >Visceral</label>   
+                    <input class="aa1" id="a4" name="a4" type="radio">
+                </div>
+            </div>
+
+            <div class="question2">
+                <label for="muscular">Which of the following tissue types is avascular and contains a basement membrane ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="a1" >Epithelium</label>
+                    <input class="aa1" id="a1" name="a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a2" >Connective</label>
+                    <input class="aa1" id="a2" name="a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a3" >Muscle</label>
+                    <input class="aa1" id="a3" name="a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a4" >Nervous</label>   
+                    <input class="aa1" id="a4" name="a4" type="radio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question3">
+                <label for="cardiovascular">Which of the following tissue types is avascular and contains a basement membrane ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="a1" >Bone</label>
+                    <input class="aa1" id="a1" name="a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a2" >Cartilage</label>
+                    <input class="aa1" id="a2" name="a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a3" >Epithelium</label>
+                    <input class="aa1" id="a3" name="a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a4" >Blood</label>   
+                    <input class="aa1" id="a4" name="a4" type="radio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question4">
+                <label for="nervous">Which tissue type provides support and connects different body parts?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="a1" >Connective</label>
+                    <input class="aa1" id="a1" name="a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a2" >Epithelial</label>
+                    <input class="aa1" id="a2" name="a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="a3" >Muscle</label>
+                    <input class="aa1" id="a3" name="a3" type="radio">
+                    </div>
+                    
+                    <div class="answers1">
+                    <label class="aa1" for="a4" >Nervous</label>   
+                    <input class="aa1" id="a4" name="a4" type="radio">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="submit-quiz">Submit</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <script src="../Project/JS/Quiz.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+in my quiz page here :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Quiz</title>
+    <link rel="stylesheet" href="../Project/CSS/navbar.css">
+    <link rel="stylesheet" href="../Project/CSS//Quiz.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Contact Us</button>
+            <a href="../Project/index.html" class="circle-button-link">
+                <div class="circle-button">
+                    <img src="../Project/Images/Anatomy Explorer.png" alt="AE" >
+                </div>
+            </a>
+            <button class="nav-btn">More Info</button>
+            <button class="nav-btn">Quiz</button>
+        </div>
+    </nav>
+
+    <main class="quiz-container">
+        <h1>Anatomy Quiz</h1>
+        <form id="quiz-form">
+            <div class="question1">
+                <label for="skeletal">Which of the following muscle types is described as striated and under involuntary control ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="q1a1" >Skeletal</label>
+                    <input class="aa1" id="q1a1" name="q1a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q1a2" >Cardiac</label>
+                    <input class="aa1" id="q1a2" name="q1a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q1a3" >Smooth</label>
+                    <input class="aa1" id="q1a3" name="q1a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q1a4" >Visceral</label>   
+                    <input class="aa1" id="q1a4" name="q1a4" type="radio">
+                </div>
+            </div>
+
+            <div class="question2">
+                <label for="muscular">Which of the following tissue types is avascular and contains a basement membrane ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="q2a1" >Epithelium</label>
+                    <input class="aa1" id="q2a1" name="q2a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q2a2" >Connective</label>
+                    <input class="aa1" id="q2a2" name="q2a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q2a3" >Muscle</label>
+                    <input class="aa1" id="q2a3" name="q2a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q2a4" >Nervous</label>   
+                    <input class="aa1" id="q2a4" name="q2a4" type="radio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question3">
+                <label for="cardiovascular">Which of the following tissue types is avascular and contains a basement membrane ?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="q3a1" >Bone</label>
+                    <input class="aa1" id="q3a1" name="q3a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q3a2" >Cartilage</label>
+                    <input class="aa1" id="q3a2" name="q3a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q3a3" >Epithelium</label>
+                    <input class="aa1" id="q3a3" name="q3a3" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q3a4" >Blood</label>   
+                    <input class="aa1" id="q3a4" name="q3a4" type="radio">
+                    </div>
+                </div>
+            </div>
+
+            <div class="question4">
+                <label for="nervous">Which tissue type provides support and connects different body parts?</label>
+                <div class="a1">
+                    <div class="answers1">
+                    <label class="aa1" for="q4a1" >Connective</label>
+                    <input class="aa1" id="q4a1" name="q4a1" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q4a2" >Epithelial</label>
+                    <input class="aa1" id="q4a2" name="q4a2" type="radio">
+                    </div>
+
+                    <div class="answers1">
+                    <label class="aa1" for="q4a3" >Muscle</label>
+                    <input class="aa1" id="q4a3" name="q4a3" type="radio">
+                    </div>
+                    
+                    <div class="answers1">
+                    <label class="aa1" for="q4a4" >Nervous</label>   
+                    <input class="aa1" id="q4a4" name="q4a4" type="radio">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="submit-quiz">Submit</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <script src="../Project/JS/Quiz.js"></script>
+</body>
+</html>
+
+
+this is the css to it: so you know how it looks:
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8vw;
+    padding: 30px;
+    padding-right: 50px;
+    background-color: rgba(91, 91, 91, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 15px 0;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.answer {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.answer:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#submit-quiz {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#submit-quiz:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for correct and incorrect answers */
+.correct-answer {
+    color: #00cc00; /* Green */
+}
+
+.incorrect-answer {
+    color: #ff0000; /* Red */
+}
+
+.a1 {
+    display: inline-flex;
+    margin-top: 0.5vw;
+    margin-bottom: 1.7vw;
+    border: solid;
+    border-color: rgba(122, 122, 122, 0.87);
+    border-radius: 20px;
+    padding-right: 7.2vw;
+    padding-top: 0.3vw;
+    padding-bottom: 0.2vw;
+}
+
+.aa1 {
+    display: inline-flex;
+    align-items: flex-start;
+    
+}
+
+.answers1 {
+    margin-left: 4.9vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .quiz-container {
+        padding: 10px;
+    }
+
+    .answer,
+    #submit-quiz {
+        font-size: 16px;
+    }
+}
+
+
+Now i dont want you to edit to it, i just want out of the four answers under each question in the page, only one of them to be clickable, so 4 basically, since one out of every four under each question. and after the person has done choosing and presses the submit button, the correct asnwers will show up as green, and the wrong ones will show up as red, and in the case of a wrong one, the correct asnwer will show up as a different and less vibrant shade of green showing the person what is the right answer instead of what they chose

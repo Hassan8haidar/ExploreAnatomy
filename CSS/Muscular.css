@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../Images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+.Muscles-container {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.Muscles-image {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+}
+
+.Muscles-info-container {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 35%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Slightly transparent border */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Soft shadow */
+}
+
+.Muscles-name {
+    color: lightskyblue;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#name {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+    color: #c78060;
+    font-size: 37px;
+}
+
+.Muscles-description {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hotspot {
+    position: absolute;
+    width: 12px; /* Adjust size as needed */
+    height: 12px;
+     /* or use an icon */
+    background-image: url('../Images/Skeletal_System/Glass.png');
+    background-size: cover;
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* Centers the hotspot */
+}
+
+.hotspot:hover {
+    background-image: url('../Images/Skeletal_System/Glass_Hover.png'); /* Path to the hover image */
+}
+
+.image-hotspot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    background-image: url('../Images/Skeletal_System/Glass.png');
+    background-size: cover;
+    /* other styling properties, such as background-image */
+}
+
+
+@media all and (max-width: 1700px) {
+    .navbar {
+        margin: 0 200px; /* Reduced margins */
+        width: calc(100% - 400px);
+    }
+
+    .nav-wrapper {
+        padding: 2px 200px; /* Reduced padding */
+        width: calc(100% - 400px);
+    }
+
+    .Muscles-container {
+        height: 100vh;
+        
+    }
+    .Muscles-image {
+        height: 100vh;
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .navbar {
+        margin: 0 200px; /* Reduced margins */
+        width: calc(100% - 400px);
+    }
+
+    .nav-wrapper {
+        padding: 2px 200px; /* Reduced padding */
+        width: calc(100% - 400px);
+    }
+
+    .skeleton-container {
+        height: 100vh;
+        
+    }
+    .skeleton-image {
+        height: 100vh;
+        width: auto;
+    }
+
+    .Muscles-description{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    #name {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+        color: #c78060;
+        font-size: 20px;
+    }
+    
+}
+
+@media all and (max-width: 700px) {
+    .navbar {
+        margin: 0 200px; /* Reduced margins */
+        width: calc(100% - 400px);
+    }
+
+    .nav-wrapper {
+        padding: 2px 200px; /* Reduced padding */
+        width: calc(100% - 400px);
+    }
+
+    .skeleton-container {
+        height: 100vh;
+        
+    }
+    .skeleton-image {
+        height: 100vh;
+        width: auto;
+    }
+
+    .Muscles-description {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    #name {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); 
+        color: #c78060;
+        font-size: 15px;
+    }
+    
+}

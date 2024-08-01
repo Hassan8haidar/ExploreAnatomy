@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muscular System</title>
+        <link rel="stylesheet" href="../Project/CSS/Muscular.css">
+        <link rel="stylesheet" href="../Project/CSS/navbar.css">
+
+        <style>
+            .circle-button {
+                background-color: #c78060;
+                color: white;
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                top: 25px;
+}
+        </style>
+    </head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Contact Us</button>
+            <a href="../Project/index.html" class="circle-button-link">
+                <div class="circle-button">
+                    <img src="../Project/Images/Anatomy Explorer.png" alt="AE" >
+                </div>
+            </a>
+            <button class="nav-btn">More Info</button>
+            <button class="nav-btn">Quiz</button>
+        </div>
+    </nav>
+
+    <div class="Muscles-container">
+        <div style="position: relative;">
+            <img class="Muscles-image" src="../Project/Images/Muscular_System/System.png" alt="Skeleton">
+            <div class="hotspot" id="Galea_Aponeurotica" style="top: 4.5%; left: 51%;"></div>
+            <div class="hotspot" id="Front_Belly_Of_epicranius_Muscle" style="top: 6.8%; left: 51%;"></div>
+            <div class="hotspot" id="Nasalis_Muscle" style="top: 9.8%; left: 51%;"></div>
+            <div class="hotspot" id="Orbicularis_Oris_Muscle" style="top: 12%; left: 50.5%;"></div>   
+            <div class="hotspot" id="Depressor_Lbaii_Inferioris_Muscle" style="top: 12.8%; left: 48.5%;"></div>   
+            <div class="hotspot" id="Mentalis_Muscle" style="top: 13.3%; left: 52.5%;"></div>   
+            <div class="hotspot" id="Omohyoid_Muscle" style="top: 15.6%; left: 48.5%;"></div>   
+            <div class="hotspot" id="Sternohyoid_Muscle" style="top: 17.6%; left: 52.5%;"></div>   
+            <div class="hotspot" id="interclavicular_Ligament" style="top: 20%; left: 40%"></div>   
+            <div class="hotspot" id="Sternocostal_Head_Of_Pectoralis_Major_Muscle" style="top: 23%; left: 46%;"></div>  
+            <div class="hotspot" id="Abdominal_Head_Of-pectoralis_Major_Muscle" style="top: 27%; left: 40%"></div>   
+            <div class="hotspot" id="External_Abdominal_Oblique_Muscle" style="top: 35.6%; left: 37%;"></div> 
+            <div class="hotspot" id="Humerus" style="top: 27%; left: 77%;"></div>
+            <div class="hotspot" id="Transverse_Ligament_of_Humerus" style="top: 20%; left: 25%;"></div>
+            <div class="hotspot" id="Rectus_Abdominis_Muscle" style="top: 34.6%; left: 58%;"></div>
+            <div class="hotspot" id="Sacrum" style="top: 45.3%; left: 51%;"></div>
+            <div class="hotspot" id="Public_Symphysis" style="top: 48.3%; left: 50%;"></div>
+            <div class="hotspot" id="Ischium" style="top: 50.3%; left: 58%;"></div>
+            <div class="hotspot" id="Pubofemoral_ligament" style="top: 47.3%; left: 36%;"></div>
+            <div class="hotspot" id="Recus_Femoris_Muscle" style="top: 55.3%; left: 69%;"></div>
+            <div class="hotspot" id="Quadriceps_femoris_Tendon" style="top: 68%; left: 64%;"></div>
+            <div class="hotspot" id="Gastrocemius_Muscle" style="top: 76%; left: 60%;"></div>
+            <div class="hotspot" id="Peroneus_Longus_Muscle" style="top: 74%; left: 70.7%;"></div>
+            <div class="hotspot" id="Talus" style="top: 92%; left: 62.7%;"></div>
+            <div class="hotspot" id="Interosseous_Membrane_Of_The_leg" style="top: 75%; left: 34%;"></div>
+
+
+
+        </div>
+
+  
+    </div>
+
+    <div class="Muscles-info-container">
+        <p class="Muscles-name">Muscle Name: <span id="name"> Name </span></p>
+        <p class="Muscles-description">Description:  ...</p>
+    </div>
+    
+    <script src="../Project/JS/Muscular.js" ></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 4];
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 3]; 
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'contact.html';
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 1]; 
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'Signup.php'; 
+        });
+    });
+    </script>
+</html>

@@ -1,0 +1,120 @@
+/* Global reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Default text color */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 240, 240, 0.8); /* Slightly transparent */
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect to the navbar background */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+    color: #007bff; /* Match with circle button color */
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.circle-button {
+    background-color: #007bff;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle-button img {
+    width: 80%;
+    height: auto;
+}
+
+.circle-button:hover {
+    top: -5px;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    margin-top: 80px; /* Adjust based on navbar height */
+}
+
+.info-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.8); /* Slightly transparent */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

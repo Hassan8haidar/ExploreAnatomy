@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hassan Nizar Haidar" >
+    <title>AnatomyExplorer</title>
+    <link href="../Project/CSS/Home.css" rel="stylesheet" >
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Contact Us</button>
+            <div class="circle-button">
+                <img src="../Project/Images/Anatomy Explorer.png" alt="AE" >
+            </div>
+            <button class="nav-btn">More Info</button>
+            <button class="nav-btn" id="quizButton">Quiz</button>
+        </div>
+    </nav>
+    <main>
+
+        <div id="skipContainer">
+            <button id="skipButton">Skip</button>
+        </div>
+        
+
+        <Introduction>
+        <div id="playContainer">
+            <button id="playButton">Unmute & Play</button>
+        </div>
+        <div class="videoContainer" >
+        <video class="intro_video" src="../Project/Videos/Introduction.mp4" ></video>
+        <img class="video-background hidden" src="../Project/Images/Background.png">
+        </div>
+        </Introduction>
+
+        <div id="imageContainer" class="hidden">
+            <!-- <img class="backgound_image" src="../Project/Images/Background.png" > -->
+            <div class="systems">
+                <a href="Skeletal.html" class="image-link" id="link1">
+                    <img class="im1" src="../Project/Images/Skeleton.png">
+                </a>
+                <a href="Muscular.html" class="image-link" id="link2">
+                    <img class="im2" src="../Project/Images/Muscular.png">
+                </a>
+                <a href="Cardiovascular.html" class="image-link" id="link3">
+                    <img class="im3" src="../Project/Images/Cardiovascular.png">
+                </a>
+                <a href="Nervous.html" class="image-link" id="link4">
+                    <img class="im4" src="../Project/Images/Nervous.png">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../Project/JS/Home.js" ></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 4];
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 3]; 
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'contact.html';
+        });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const quizButton = navButtons[navButtons.length - 1]; 
+    
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'Signup.php'; 
+        });
+    });
+    </script>
+</html>

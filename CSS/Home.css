@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background-image: url('../Images/Background.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    z-index: -100;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+#playContainer {
+    position: absolute;
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#playButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.intro_video {
+    height: 100vh; /* Adjust as needed */
+    width: 100vw;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-background {
+    height: 100vh; /* Adjust as needed */
+    width: 100vw;
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#imageContainer.hidden {
+    opacity: 0;
+  }
+  
+#imageContainer {
+    display: none;
+    z-index: 2;
+    bottom: 0;
+}
+
+#imageContainer img {
+    position: fixed; /* Stack images on top of each other */
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 31vh;
+    width: 25vw;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.im1 {
+    z-index: 8;
+    padding-left: 0vw;
+
+}
+.im2 {
+    z-index: 7;
+    padding-left: 25vw;
+
+}
+.im3 {
+    z-index: 6;
+    padding-left: 50vw;
+}
+.im4 {
+    z-index: 5;
+    padding-left: 75vw;
+}
+
+.im1:hover,
+.im2:hover,
+.im3:hover,
+.im4:hover {
+    filter: brightness(50%); /* Reduces brightness to 70% */
+}
+
+.navbar {
+    margin: 0px 400px; /* Top and bottom margin 20px, left and right margin 300px */
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 800px); /* Adjusting the width to account for left and right margin */
+    height: 7%;
+    z-index: 10;
+    transform: translateY(-130%);
+    transition: transform 1s ease;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.navbar.show {
+    transform: translateY(0); /* Move back to its original position */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 600px);
+    padding: 2px 300px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle-button {
+    background-color: #007bff;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 25px;
+}
+
+.circle-button img {
+    height: 80%; /* Adjust as needed */
+    width: auto;
+}
+
+
+.circle-button:hover {
+    top: 15px;
+}
+
+/* Existing styles (above) */
+
+/* Small screens, less than 768px */
+
+
+/* Medium screens, between 768px and 1199px */
+
+
+#skipContainer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3; /* Make sure it's above other elements */
+}
+
+#skipButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#skipButton:hover {
+    background-color: #d0d0d0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* Small screens, less than 768px */
+@media all and (max-width: 1800px) {
+    .navbar {
+        margin: 0 200px; /* Reduced margins */
+        width: calc(100% - 400px);
+    }
+
+    .nav-wrapper {
+        padding: 2px 200px; /* Reduced padding */
+        width: calc(100% - 400px);
+    }
+}
+
+/* Medium screens, between 768px and 1199px */
+/* Medium screens, between 769px and 992px */
+@media screen and (max-width: 992px) {
+    .navbar {
+        margin: 0 10vw;
+        width: 80vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 4vw;
+        width: calc(100% - 8vw);
+    }
+
+    .nav-btn {
+        font-size: 1.8vh;
+        padding: 1.5vh;
+    }
+
+    .circle-button {
+        width: 6.5vh;
+        height: 6.5vh;
+        top: 1.5vh;
+    }
+
+    .circle-button img {
+        height: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+       margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        margin: 0 5vw;
+        width: 90vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 2vw;
+    }
+
+    .nav-btn {
+        font-size: 1.5vh;
+        padding: 1vh;
+    }
+
+    .circle-button {
+        width: 6vh;
+        height: 6vh;
+        top: 1vh;
+    }
+
+    .circle-button img {
+        height: 70%;
+    }
+}
+
+
+    @media screen and (max-width: 1199px) {
+        .navbar {
+            margin: 0 10vw;
+            width: 80vw;
+        }
+    
+        .nav-wrapper {
+            padding: 1vh 4vw;
+        }
+    
+        .nav-btn {
+            font-size: 1.8vh;
+            padding: 1.5vh;
+        }
+    
+        .circle-button {
+            width: 6.5vh;
+            height: 6.5vh;
+            top: 1.5vh;
+        }
+    
+        .circle-button img {
+            height: 75%;
+        }
+    }
+
+#skipContainer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3; /* Make sure it's above other elements */
+}
+
+#skipButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#skipButton:hover {
+    background-color: #d0d0d0;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 0 2vw;
+        width: 96vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 2vw;
+        width: calc(100% - 4vw);
+    }
+
+    .nav-btn {
+        font-size: 1.2vh;
+        padding: 1vh;
+    }
+
+    .circle-button {
+        width: 5vh;
+        height: 5vh;
+        top: 1vh;
+    }
+
+    .circle-button img {
+        height: 60%;
+    }
+
+    #imageContainer img {
+    position: fixed; /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 70vh;
+    width: 25vw;
+    height: auto;
+}
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1350px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 40 vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 43vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 47vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 50vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 55vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 60vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 750px) and (max-width: 850px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 65vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 750px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 70vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 490px) and (max-width: 600px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 76vh;
+        width: 25vw;
+        height: auto;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 490px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 80vh;
+        width: 25vw;
+        height: auto;
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 360px) {
+    #imageContainer img {
+        position: fixed; /* Stack images on top of each other */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 84vh;
+        width: 25vw;
+        height: auto;
+}
+}
+
+
+
+

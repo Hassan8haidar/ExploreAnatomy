@@ -1,0 +1,239 @@
+.navbar {
+    margin: 0px 400px; /* Top and bottom margin 20px, left and right margin 300px */
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 800px); /* Adjusting the width to account for left and right margin */
+    height: 7%;
+    z-index: 10;
+    transform: translateY(0);
+    transition: transform 1s ease;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.navbar.show {
+    transform: translateY(0); /* Move back to its original position */
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 600px);
+    padding: 2px 300px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 15px;
+}
+
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.circle-button {
+    background-color: #007bff;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    top: 25px;
+}
+
+.circle-button img {
+    height: 80%; /* Adjust as needed */
+    width: auto;
+}
+
+.circle-button:hover {
+    top: 15px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+
+
+/* Small screens, less than 768px */
+@media all and (max-width: 1800px) {
+    .navbar {
+        margin: 0 200px; /* Reduced margins */
+        width: calc(100% - 400px);
+    }
+
+    .nav-wrapper {
+        padding: 2px 200px; /* Reduced padding */
+        width: calc(100% - 400px);
+    }
+
+    .im1, .im2, .im3, .im4 {
+        position: relative; /* Add this line */
+        top: -20px;
+        width: 30%; /* Adjust image size based on your preference */
+        height: auto; /* Maintain aspect ratio */   
+    }
+    .im1 {
+        padding-left: 10px;
+    }
+    .im2 {
+        padding-left: 300px;
+    }
+    .im3 {
+        padding-left: 600px;
+    }
+    .im4 {
+        padding-left: 900px;
+    }
+}
+
+/* Medium screens, between 768px and 1199px */
+/* Medium screens, between 769px and 992px */
+@media screen and (max-width: 992px) {
+    .navbar {
+        margin: 0 10vw;
+        width: 80vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 4vw;
+        width: calc(100% - 8vw);
+    }
+
+    .nav-btn {
+        font-size: 1.8vh;
+        padding: 1.5vh;
+    }
+
+    .circle-button {
+        width: 6.5vh;
+        height: 6.5vh;
+        top: 1.5vh;
+    }
+
+    .circle-button img {
+        height: 75%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+       margin: 0;
+        padding: 0;
+    }
+    .navbar {
+        margin: 0 5vw;
+        width: 90vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 2vw;
+    }
+
+    .nav-btn {
+        font-size: 1.5vh;
+        padding: 1vh;
+    }
+
+    .circle-button {
+        width: 6vh;
+        height: 6vh;
+        top: 1vh;
+    }
+
+    .circle-button img {
+        height: 70%;
+    }
+}
+
+
+    .im1, .im2, .im3, .im4 {
+        width: 45%; /* Adjust image size based on your preference */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    @media screen and (max-width: 1199px) {
+        .navbar {
+            margin: 0 10vw;
+            width: 80vw;
+        }
+    
+        .nav-wrapper {
+            padding: 1vh 4vw;
+        }
+    
+        .nav-btn {
+            font-size: 1.8vh;
+            padding: 1.5vh;
+        }
+    
+        .circle-button {
+            width: 6.5vh;
+            height: 6.5vh;
+            top: 1.5vh;
+        }
+    
+        .circle-button img {
+            height: 75%;
+        }
+    }
+#skipContainer {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 3; /* Make sure it's above other elements */
+}
+
+#skipButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#skipButton:hover {
+    background-color: #d0d0d0;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        margin: 0 2vw;
+        width: 96vw;
+    }
+
+    .nav-wrapper {
+        padding: 1vh 2vw;
+        width: calc(100% - 4vw);
+    }
+
+    .nav-btn {
+        font-size: 1.2vh;
+        padding: 1vh;
+    }
+
+    .circle-button {
+        width: 5vh;
+        height: 5vh;
+        top: 1vh;
+    }
+
+    .circle-button img {
+        height: 60%;
+    }
+    
+}
+
